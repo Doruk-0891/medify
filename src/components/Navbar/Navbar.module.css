@@ -1,0 +1,42 @@
+.wrapper {
+    width: 100%;
+}
+
+.navbarContainer {
+    width: 80%;
+    height: 96px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navRight, .navMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+}
+
+.navMenu li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navMenu li p {
+    color: var(--text-secondary-blue);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.navMenu .active {
+    border-bottom: 6px solid var(--primary-blue);
+}
+
+.navMenu .active p {
+    color: var(--primary-blue);
+    
+}
