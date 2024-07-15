@@ -1,0 +1,42 @@
+.container {
+    width: 363px;
+    border-radius: 10px 10px 0 0;
+}
+
+.textContainer {
+    padding: 1rem;
+}
+
+.metaData {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #77829D;
+}
+
+.metaData span {
+    margin-right: 20px;
+}
+
+.title {
+    margin: 10px 0;
+}
+
+.title, .profilePic {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: var(--secondary-blue);
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+}
+
+.imageContainer {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+

@@ -3,11 +3,13 @@ import styles from './HomePage.module.css';
 import Hero from "../../components/Hero/Hero";
 import SearchSection from "./SearchSection/SearchSection";
 import SearchCard from "../../components/SearchCard/SearchCard";
-import { SPECIALISATION } from "../../helper/helper";
+import { NEWS, SPECIALISATION } from "../../helper/helper";
 import Button from "../../components/Button/Button";
 import { MdVerified } from "react-icons/md";
 import ConsultationImage from '../../assets/Consultation.png';
 import CountImage from '../../assets/counts.png';
+import NewsCard from "../../components/NewsCard/NewsCard";
+import Footer from "../../components/Footer/Footer";
 
 const HomePage = () => {
     return (
@@ -65,6 +67,18 @@ const HomePage = () => {
 
                 </div>
 
+                <div className={styles.flexContainer} style={{flexDirection: 'column'}}>
+                    <h3 className={styles.sectionHeading}>
+                        <p className={styles.subheading}>Blogs & News</p>
+                        Read Our Latest News
+                    </h3>
+                    <div className={styles.flexContainer}>
+                        {
+                            NEWS.map((news, idx) => <NewsCard data={news} key={idx} />)
+                        }
+                    </div>
+                </div>
+
                 <div className={styles.count}>
 
                     <div>
@@ -80,6 +94,8 @@ const HomePage = () => {
                 </div>
 
             </div>
+
+            <Footer />
 
         </div>
     );

@@ -55,3 +55,33 @@ export const SPECIALISATION = [
         title: 'X-Ray'
     }
 ];
+
+export const NEWS = [
+    {
+        image: require('../assets/news.jpg'),
+        title: "6 Tips To Protect Your Mental Health When You're Sick",
+        type: 'medical',
+        date: 'March 31, 2022',
+        profile_image: require('../assets/newsProfile.png'),
+        name: 'Rebecca Lee'
+        
+    },
+    {
+        image: require('../assets/news.jpg'),
+        title: "6 Tips To Protect Your Mental Health When You're Sick",
+        type: 'medical',
+        date: 'March 31, 2022',
+        profile_image: require('../assets/newsProfile.png'),
+        name: 'Rebecca Lee'
+        
+    },
+    {
+        image: require('../assets/news.jpg'),
+        title: "6 Tips To Protect Your Mental Health When You're Sick",
+        type: 'medical',
+        date: 'March 31, 2022',
+        profile_image: require('../assets/newsProfile.png'),
+        name: 'Rebecca Lee'
+        
+    },
+];
