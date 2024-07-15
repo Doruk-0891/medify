@@ -3,4 +3,98 @@
     height: 100%;
 }
 
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
 
+.sectionHeading {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 67px;
+    text-align: center;
+    color: var(--secondary-blue);
+    margin-bottom: 20px;
+}
+
+.specialisationSection {
+    padding: 4rem;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.advertisement, .count {
+    display: flex;
+    gap: 40px;
+    min-height: 598px;
+    padding: 4rem;
+    align-items: center;
+}
+
+.advertisement .imageContainer img, 
+.count .imageContainer img {
+    width: 100%;
+}
+
+.advertisement > div, .count > div {
+    flex: 1 1 50%;
+}
+
+
+.tagline , 
+.heading {
+    font-weight: 600;
+} 
+
+.tagline {
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--primary-blue);
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 67px;
+    color: var(--secondary-blue);
+}
+
+.advertisement .heading span {
+    color: var(--primary-blue);
+}
+
+.textContent {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #77829D;
+    margin: 1rem 0;
+}
+
+.advertisement ul {
+    list-style-type: none;
+}
+
+.advertisement ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.advertisement ul li p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--secondary-blue);
+    margin: 1rem 0;
+}
+
+.count .textContent {
+    line-height: 40.8px;
+}

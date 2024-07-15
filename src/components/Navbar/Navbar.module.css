@@ -37,6 +37,6 @@
 }
 
 .navMenu .active p {
-    color: var(--primary-blue);
-    
+    color: var(--primary-blue); 
+    font-weight: 600;
 }

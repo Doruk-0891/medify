@@ -1,0 +1,44 @@
+.container {
+     display: flex;
+     height: 600px;
+     width: 100%;
+}
+
+.textContainer, .imageContainer {
+    flex: 1 1 50%;
+}
+
+.heading, .textContent {
+    margin-bottom: 20px;
+}
+
+.textContent {
+    color: #5C6169;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+}
+
+.tagline, .heading, .heading span {
+    letter-spacing: 0.02em;
+}
+
+.tagline {
+    font-size: 31px;
+    font-weight: 500;
+    color: var(--text-secondary-blue);
+}
+
+.heading {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.heading span {
+    color: var(--primary-blue);
+}
+
+.imageContainer img{
+    width: 100%;
+}

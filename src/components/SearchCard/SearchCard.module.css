@@ -1,0 +1,33 @@
+.cardContainer{
+    height: 153px;
+    width: 203px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.textContent {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.cardContainer:hover {
+    border: 1px solid #2AA7FF;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.imageContainer {
+    width: 60px;
+}
+
+.imageContainer img {
+    width: 60px;
+    height: 60px;
+}
