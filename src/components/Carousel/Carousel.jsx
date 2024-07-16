@@ -12,6 +12,9 @@ const Carousel = ({dataList, componentToRender}) => {
     return (
         <>
             <Swiper
+            style={{
+                '--swiper-pagination-color': 'var(--primary-blue)',
+            }}
             slidesPerView={'auto'}
             spaceBetween={30}
             pagination={{

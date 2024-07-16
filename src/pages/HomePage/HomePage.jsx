@@ -3,7 +3,7 @@ import styles from './HomePage.module.css';
 import Hero from "../../components/Hero/Hero";
 import SearchSection from "./SearchSection/SearchSection";
 import SearchCard from "../../components/SearchCard/SearchCard";
-import { AdvertisementImages, NEWS, QnA, SPECIALISATION } from "../../helper/helper";
+import { AdvertisementImages, NEWS, QnA, SPECIALISATION, SPECIALIST } from "../../helper/helper";
 import Button from "../../components/Button/Button";
 import { MdVerified } from "react-icons/md";
 import ConsultationImage from '../../assets/Consultation.png';
@@ -15,6 +15,7 @@ import FAQImage from '../../assets/FAQImage.png';
 import coloredHeart from '../../assets/coloredheart.png';
 import AdvertisementCard from "../../components/AdvertisementCard/AdvertisementCard";
 import Carousel from "../../components/Carousel/Carousel";
+import DoctorCard from "../../components/DoctorCard/DoctorCard";
 
 const HomePage = () => {
     return (
@@ -45,6 +46,12 @@ const HomePage = () => {
 
                     </div>
 
+                </div>
+
+                <div>
+                    <h3 className={styles.sectionHeading}>Our Medical Specialist</h3>
+                    <Carousel dataList={SPECIALIST} 
+                    componentToRender={(data) => DoctorCard(data)} />
                 </div>
 
 

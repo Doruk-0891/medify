@@ -1,0 +1,39 @@
+.container {
+    min-width: 370px;
+    height: 505px;
+}
+
+.textContent {
+    padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+    text-align: center;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 48px;
+    color: var(--secondary-blue);
+}
+
+.role {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--primary-blue);
+}
+
+.imageContainer {
+    padding: 0.5rem;
+}
+
+.pill {
+    width: 350px;
+    height: 395px;
+    border-radius: 250px 250px 4px 4px;
+    background-image: var(--bluewhite-linear-gradient);
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+

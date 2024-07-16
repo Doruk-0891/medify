@@ -122,3 +122,36 @@ export const AdvertisementImages = [
         image: require('../assets/image1.png')
     }
 ];
+
+export const SPECIALIST = [
+    {
+        image: require('../assets/medical-doctor-2.png'),
+        name: 'Dr. Ahmad Khan', 
+        role: 'Neurologist'
+    },
+    {
+        image: require('../assets/portrait-doctor-2.png'),
+        name: 'Dr. Heena Sachdeva', 
+        role: 'Orthopadics'
+    },
+    {
+        image: require('../assets/doctor-3.png'),
+        name: 'Dr. Ankur Sharma', 
+        role: 'Medicine'
+    },
+    {
+        image: require('../assets/medical-doctor-2.png'),
+        name: 'Dr. Ahmad Khan', 
+        role: 'Neurologist'
+    },
+    {
+        image: require('../assets/portrait-doctor-2.png'),
+        name: 'Dr. Heena Sachdeva', 
+        role: 'Orthopadics'
+    },
+    {
+        image: require('../assets/doctor-3.png'),
+        name: 'Dr. Ankur Sharma', 
+        role: 'Medicine'
+    },
+];
