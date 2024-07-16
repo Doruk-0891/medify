@@ -3,7 +3,7 @@ import styles from './HomePage.module.css';
 import Hero from "../../components/Hero/Hero";
 import SearchSection from "./SearchSection/SearchSection";
 import SearchCard from "../../components/SearchCard/SearchCard";
-import { NEWS, QnA, SPECIALISATION } from "../../helper/helper";
+import { AdvertisementImages, NEWS, QnA, SPECIALISATION } from "../../helper/helper";
 import Button from "../../components/Button/Button";
 import { MdVerified } from "react-icons/md";
 import ConsultationImage from '../../assets/Consultation.png';
@@ -13,6 +13,8 @@ import Footer from "../../components/Footer/Footer";
 import Accordion from "../../components/Accordion/Accordion";
 import FAQImage from '../../assets/FAQImage.png';
 import coloredHeart from '../../assets/coloredheart.png';
+import AdvertisementCard from "../../components/AdvertisementCard/AdvertisementCard";
+import Carousel from "../../components/Carousel/Carousel";
 
 const HomePage = () => {
     return (
@@ -23,6 +25,9 @@ const HomePage = () => {
                 <Hero />
 
                 <SearchSection />
+
+                <Carousel dataList={AdvertisementImages} 
+                componentToRender = {(data)=> AdvertisementCard(data)} />
 
                 <div className={styles.specialisationSection}>
 

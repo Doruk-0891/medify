@@ -104,3 +104,21 @@ export const QnA = [
         answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste harum at, nostrum libero cupiditate iure facilis, eaque culpa, officia sequi molestiae mollitia minima maiores corporis quidem tempora maxime neque!'
     }
 ];
+
+export const AdvertisementImages = [
+    {
+        image: require('../assets/image1.png')
+    },
+    {
+        image: require('../assets/image2.png')
+    },
+    {
+        image: require('../assets/image1.png')
+    },
+    {
+        image: require('../assets/image2.png')
+    },
+    {
+        image: require('../assets/image1.png')
+    }
+];
