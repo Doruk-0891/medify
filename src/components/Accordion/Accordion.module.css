@@ -1,0 +1,25 @@
+.accordionItem {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.questionWrapper {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--secondary-blue);
+}
+
+.answer {
+    color: var(--secondary-blue);
+    text-align: justify;
+    opacity: 70%;
+}

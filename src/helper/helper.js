@@ -85,3 +85,22 @@ export const NEWS = [
         
     },
 ];
+
+export const QnA = [
+    {
+        question: 'Why choose our medical for your family?',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste harum at, nostrum libero cupiditate iure facilis, eaque culpa, officia sequi molestiae mollitia minima maiores corporis quidem tempora maxime neque!'
+    },
+    {
+        question: 'Why we are different from others?',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste harum at, nostrum libero cupiditate iure facilis, eaque culpa, officia sequi molestiae mollitia minima maiores corporis quidem tempora maxime neque!'
+    },
+    {
+        question: 'Trusted & experience senior care & love',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste harum at, nostrum libero cupiditate iure facilis, eaque culpa, officia sequi molestiae mollitia minima maiores corporis quidem tempora maxime neque!'
+    },
+    {
+        question: 'How to get appointment for emergency cases?',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste harum at, nostrum libero cupiditate iure facilis, eaque culpa, officia sequi molestiae mollitia minima maiores corporis quidem tempora maxime neque!'
+    }
+];

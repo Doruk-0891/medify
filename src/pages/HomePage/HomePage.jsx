@@ -3,13 +3,16 @@ import styles from './HomePage.module.css';
 import Hero from "../../components/Hero/Hero";
 import SearchSection from "./SearchSection/SearchSection";
 import SearchCard from "../../components/SearchCard/SearchCard";
-import { NEWS, SPECIALISATION } from "../../helper/helper";
+import { NEWS, QnA, SPECIALISATION } from "../../helper/helper";
 import Button from "../../components/Button/Button";
 import { MdVerified } from "react-icons/md";
 import ConsultationImage from '../../assets/Consultation.png';
 import CountImage from '../../assets/counts.png';
 import NewsCard from "../../components/NewsCard/NewsCard";
 import Footer from "../../components/Footer/Footer";
+import Accordion from "../../components/Accordion/Accordion";
+import FAQImage from '../../assets/FAQImage.png';
+import coloredHeart from '../../assets/coloredheart.png';
 
 const HomePage = () => {
     return (
@@ -91,6 +94,35 @@ const HomePage = () => {
                         <img src={CountImage} alt="consultation_image" />
                     </div>
 
+                </div>
+
+                <div className={styles.faqContainer}>
+                    <h3 className={styles.sectionHeading}>
+                        <p className={styles.subheading}>Get Your Answer</p>
+                        Frequently Asked Questions
+                    </h3>
+                    <div className={styles.splitter}>
+                        <div className={styles.imageContainer}>
+                            <div style={{position:'relative'}}>
+                                <img src={FAQImage} alt="questions" style={{
+                                    height:'598px'
+                                }} />
+                                    <img src={coloredHeart} alt="colored heart" style={{
+                                        width: '80px',
+                                        position: 'absolute',
+                                        zIndex: '10',
+                                        top: '180px',
+                                        right: '-5px'
+                                    }} />
+                            </div>
+                        </div>
+                        <div className={styles.accordionWrapper}>
+                            {
+                                QnA.map((data, idx) =>  <Accordion key={idx} data={data} />)
+                            }
+                            
+                        </div>
+                    </div>
                 </div>
 
             </div>

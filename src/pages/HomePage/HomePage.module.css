@@ -29,7 +29,7 @@
     gap: 40px;
 }
 
-.advertisement, .count {
+.advertisement, .count, .splitter {
     display: flex;
     gap: 40px;
     min-height: 598px;
@@ -37,12 +37,20 @@
     align-items: center;
 }
 
-.advertisement .imageContainer img, 
-.count .imageContainer img {
+.splitter {
+    gap: 0;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+
+.imageContainer img {
     width: 100%;
 }
 
-.advertisement > div, .count > div {
+.advertisement > div, .count > div, .splitter > div {
     flex: 1 1 50%;
 }
 

@@ -7,4 +7,10 @@ const Button = ({children, handlerFunction}) => {
     );
 }
 
+export const IconButton = ({children, handlerFunction}) => {
+    return (
+        <button onClick={handlerFunction} className={styles.iconButton}>{children}</button>
+    );
+}
+
 export default Button;

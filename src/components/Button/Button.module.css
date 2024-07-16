@@ -1,9 +1,9 @@
+
 .button {
     outline: none;
     border: 1px solid var(--primary-blue);
     background-color: var(--primary-blue);
     color: var(--light);
-    font-family: Poppins;
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -13,4 +13,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.iconButton {
+    outline: none;
+    border: 1px solid var(--light);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 18px;
+    color: var(--primary-blue);
+    background-color: var(--light);
+    cursor: pointer;
 }
