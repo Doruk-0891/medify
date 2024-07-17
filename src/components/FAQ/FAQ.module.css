@@ -1,0 +1,30 @@
+.sectionHeading {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 67px;
+    text-align: center;
+    color: var(--secondary-blue);
+    margin-bottom: 20px;
+}
+
+.subheading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    color: var(--primary-blue);
+}
+
+.splitter {
+    display: flex;
+    min-height: 598px;
+    padding: 4rem;
+    align-items: center;
+    gap: 0;
+}
+
+
+
+.splitter > div {
+    flex: 1 1 auto;
+}
