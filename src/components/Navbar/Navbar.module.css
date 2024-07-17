@@ -3,16 +3,18 @@
 }
 
 .navbarContainer {
+    min-height: 96px;
     width: 80%;
-    height: 96px;
-    margin: auto;
+    margin: 1rem auto 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
 .navRight, .navMenu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
@@ -39,4 +41,10 @@
 .navMenu .active p {
     color: var(--primary-blue); 
     font-weight: 600;
+}
+
+@media screen and (max-width: 940px) {
+    .navbarContainer {
+        justify-content: center;
+    }
 }

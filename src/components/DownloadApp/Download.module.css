@@ -1,20 +1,22 @@
 .container {
-    height: 542px;
+    min-height: 600px;
+    margin-bottom: 75px;
 }
 
 .wrapper {
     width: 80%;
     margin: auto;
     display: flex;
-    gap: 10rem;
+    justify-content: center;
+    gap: 100px;
 }
 
 .container > div {
-    flex: 1 1 auto;
+    flex: 1 1 50%;
 }
 
 .imageContainer {
-    width: 400px;
+    width: 500px;
 }
 
 .imageContainer img {
@@ -24,7 +26,9 @@
 
 .textContent {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     position: relative;
 }
@@ -54,18 +58,44 @@
 
 .smsContainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     align-items: center;
 }
 
 .inputContainer ,.downloadButton{
     display: flex;
+    width: 100%;
     gap: 20px;
     align-items: center;
+}
+
+.downloadButton {
+    flex-wrap: wrap;
 }
 
 .inputContainer input {
     outline: none;
     border: 1px solid #F0F0F0;
     color: black;
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .arrowContainer {
+        left: -10%;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    .imageContainer {
+        width: 300px;
+    }
 }

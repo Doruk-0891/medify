@@ -2,7 +2,6 @@ import React from "react";
 import styles from './FAQ.module.css';
 import Accordion from "../../components/Accordion/Accordion";
 import FAQImage from '../../assets/FAQImage.png';
-import coloredHeart from '../../assets/coloredheart.png';
 import { QnA } from "../../helper/helper";
 
 const FAQ = () => {
@@ -16,15 +15,9 @@ const FAQ = () => {
                         <div className={styles.imageContainer}>
                             <div style={{position:'relative'}}>
                                 <img src={FAQImage} alt="questions" style={{
-                                    height:'598px'
+                                    height:'auto'
                                 }} />
-                                    <img src={coloredHeart} alt="colored heart" style={{
-                                        width: '80px',
-                                        position: 'absolute',
-                                        zIndex: '10',
-                                        top: '180px',
-                                        right: '-5px'
-                                    }} />
+                                    
                             </div>
                         </div>
                         <div className={styles.accordionWrapper}>

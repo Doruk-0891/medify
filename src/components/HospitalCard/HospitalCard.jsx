@@ -4,7 +4,6 @@ import HospitalImage from '../../assets/colored_hospital.png';
 import { IoIosThumbsUp } from "react-icons/io";
 
 const HospitalCard = ({hospitalData, isBooking = false}) => {
-console.log(hospitalData);
 
   return (
     <Box sx={{ borderRadius: 2, bgcolor: "#fff", p: { xs: 2, md: 4 } }}>

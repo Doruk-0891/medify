@@ -2,6 +2,8 @@ import React from "react";
 import styles from './Navbar.module.css';
 import Logo from '../Logo/Logo';
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
     
@@ -9,8 +11,9 @@ const Navbar = () => {
         <div className={styles.wrapper}>
 
             <div className={styles.navbarContainer}>
-
-                <Logo />
+                <Link to='/'>
+                    <Logo />
+                </Link>
 
                 <div className={styles.navRight}>
 
@@ -21,7 +24,11 @@ const Navbar = () => {
                                 Find Doctors
                             </p>
                         </li>
-                        <li><p>Hospitals</p></li>
+                        <li>
+                            <Link to='/search' style={{textDecoration: 'none'}}>
+                                <p>Hospitals</p>
+                            </Link>
+                        </li>
                         <li><p>Medicines</p></li>
                         <li><p>Surgeries</p></li>
                         <li><p>Software for Provider</p></li>
@@ -29,7 +36,9 @@ const Navbar = () => {
 
                     </ul>
 
-                    <Button>My Bookings</Button>
+                    <Link to='/mybookings' style={{textDecoration: 'none'}}>
+                        <Button>My Bookings</Button>
+                    </Link>
 
                 </div>
 

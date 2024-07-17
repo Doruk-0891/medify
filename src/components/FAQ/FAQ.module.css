@@ -4,7 +4,7 @@
     line-height: 67px;
     text-align: center;
     color: var(--secondary-blue);
-    margin-bottom: 20px;
+    margin-top: 4rem;
 }
 
 .subheading {
@@ -18,13 +18,28 @@
 .splitter {
     display: flex;
     min-height: 598px;
-    padding: 4rem;
     align-items: center;
-    gap: 0;
+}
+
+.imageContainer {
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.imageContainer img {
+    width: 100%;
+    height:  100%;
 }
 
 
 
 .splitter > div {
     flex: 1 1 auto;
+}
+
+@media screen and (max-width: 760px) {
+    .splitter {
+        flex-direction: column;
+        justify-content: center;
+    }
 }

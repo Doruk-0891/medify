@@ -13,8 +13,8 @@ const SearchPage = () => {
     const [hospitals, setHospitals] = useState([]);
     const [searchParams, setSearchParams] = useSearchParams();
     const [isLoading, setIsLoading] = useState(false);
-    const state = searchParams.get('state');
-    const city = searchParams.get('city');
+    const state = searchParams.get('state') || '';
+    const city = searchParams.get('city') || '';
 
     useEffect(() => {
             const getHospitalsList = async () => {
@@ -105,7 +105,7 @@ const SearchPage = () => {
                   </Typography>
                 )}
 
-              {hospitals.length && 
+              {hospitals.length > 0 && 
                 hospitals.map((hospital) => {
                   return <HospitalCard
                     key={hospital["Hospital Name"]}
