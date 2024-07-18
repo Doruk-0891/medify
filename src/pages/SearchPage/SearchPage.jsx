@@ -6,15 +6,25 @@ import { useSearchParams } from "react-router-dom";
 import axios from "axios";
 import Advertisement from '../../assets/Addvertisement.png';
 import HospitalCard from "../../components/HospitalCard/HospitalCard";
+import { useSnackbar } from "notistack";
 
 const hospitalsURL = 'https://meddata-backend.onrender.com/data';
 
 const SearchPage = () => {
     const [hospitals, setHospitals] = useState([]);
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const [isLoading, setIsLoading] = useState(false);
+    const [bookingDetails, setBookingDetails] = useState({});
+
+    const {enqueueSnackbar} = useSnackbar();
+
     const state = searchParams.get('state') || '';
     const city = searchParams.get('city') || '';
+    const slots = {
+      morning: ["11:30 AM"],
+      afternoon: ["12:00 PM", "12:30 PM", "01:30 PM", "02:00 PM", "02:30 PM"],
+      evening: ["06:00 PM", "06:30 PM", "07:00 PM", "07:30 PM"],
+    };
 
     useEffect(() => {
             const getHospitalsList = async () => {
@@ -33,7 +43,14 @@ const SearchPage = () => {
         if (state && city) {
             getHospitalsList();
         }
-    }, []);
+    }, [state, city]);
+
+    const handleBooking = (data) => {
+      setBookingDetails(data);
+      const prevbookings = JSON.parse(localStorage.getItem("bookings")) || [];
+      localStorage.setItem("bookings", JSON.stringify([...prevbookings, {...data}]));
+      enqueueSnackbar('Booked succesfully!!!', {variant: 'success'});
+    }
 
     return (
         <Box
@@ -110,6 +127,8 @@ const SearchPage = () => {
                   return <HospitalCard
                     key={hospital["Hospital Name"]}
                     hospitalData={hospital}
+                    slots={slots}
+                    handleBooking={handleBooking}
                   />
                 })
                 }
@@ -121,7 +140,6 @@ const SearchPage = () => {
           </Stack>
         </Container>
 
-            
         </Box>
     );
 }

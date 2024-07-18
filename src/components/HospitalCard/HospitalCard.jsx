@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button,Divider, Stack, Typography } from "@mui/material";
 import HospitalImage from '../../assets/colored_hospital.png';
 import { IoIosThumbsUp } from "react-icons/io";
+import Calendar from "../Calendar/Calendar";
 
-const HospitalCard = ({hospitalData, isBooking = false}) => {
+const HospitalCard = ({hospitalData, isBooking = false, slots, handleBooking}) => {
+  const [showCalendar, setShowCalendar] = useState(false);
 
   return (
     <Box sx={{ borderRadius: 2, bgcolor: "#fff", p: { xs: 2, md: 4 } }}>
@@ -107,14 +109,21 @@ const HospitalCard = ({hospitalData, isBooking = false}) => {
               <Button
                 variant="contained"
                 disableElevation
+                onClick={() => setShowCalendar(prev => !prev)}
               >
-                Book FREE Center Visit
+                {
+                  showCalendar ? 'Hide Booking Calendar' : 'Book FREE Center Visit'
+                }
+                
               </Button>
             </>
           )}
 
         </Stack>
       </Stack>
+      {
+        showCalendar && <Calendar details={hospitalData} slots={slots} handleBooking={handleBooking} />
+      }
     </Box>
   );
 }

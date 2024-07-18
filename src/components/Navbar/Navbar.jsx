@@ -17,7 +17,7 @@ const Navbar = () => {
 
                 <div className={styles.navRight}>
 
-                    <ul className={styles.navMenu} onClick={(e) => console.log(e)}>
+                    <ul className={styles.navMenu}>
 
                         <li className={styles.active}>
                             <p>

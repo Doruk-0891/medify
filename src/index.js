@@ -6,6 +6,7 @@ import App from './App';
 import HomePage from './pages/HomePage/HomePage';
 import SearchPage from './pages/SearchPage/SearchPage';
 import MyBookingsPage from './pages/MyBookings/MyBookings';
+import {SnackbarProvider} from 'notistack';
 
 
 const routes = createBrowserRouter([
@@ -32,6 +33,8 @@ const routes = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={routes} />
+    <SnackbarProvider>
+      <RouterProvider router={routes} />
+    </SnackbarProvider>
   </React.StrictMode>
 );
