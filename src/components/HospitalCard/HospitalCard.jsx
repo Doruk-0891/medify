@@ -24,7 +24,7 @@ const HospitalCard = ({hospitalData, isBooking = false, slots, handleBooking}) =
         <Box flex={1}>
           <Typography
             component="h3"
-            color="primary.main"
+            color="#2AA7FF"
             fontWeight={600}
             fontSize={{ xs: 18, md: 20 }}
             mb={1}
